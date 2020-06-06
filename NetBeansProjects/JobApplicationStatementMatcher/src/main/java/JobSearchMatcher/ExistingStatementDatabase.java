@@ -32,5 +32,9 @@ public class ExistingStatementDatabase {
         }
     }
     
+    public int size() {
+        return this.statementList.size();
+    }
+    
     
 }

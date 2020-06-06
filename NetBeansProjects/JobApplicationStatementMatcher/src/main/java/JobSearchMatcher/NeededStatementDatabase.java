@@ -33,4 +33,8 @@ public class NeededStatementDatabase {
             
         }
     }
+    
+    public int size() {
+        return this.needList.size();
+    } 
 }
