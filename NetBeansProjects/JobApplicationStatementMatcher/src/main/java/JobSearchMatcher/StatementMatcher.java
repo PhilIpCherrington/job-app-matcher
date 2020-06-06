@@ -17,14 +17,12 @@ public class StatementMatcher {
 
     private NeededStatementDatabase needList;
     private ExistingStatementDatabase existingList;
-    private MatchedStatementDatabase matchedList;
     private ArrayList<ArrayList<Integer>> listOfScores = new ArrayList<>();
     private HashMap<Integer,Integer> matched = new HashMap<>(); 
 
-    public StatementMatcher(NeededStatementDatabase needList, ExistingStatementDatabase existingList, MatchedStatementDatabase matchedList) {
+    public StatementMatcher(NeededStatementDatabase needList, ExistingStatementDatabase existingList) {
         this.needList = needList;
         this.existingList = existingList;
-        this.matchedList = matchedList;
     }
     
     public void scoreTheStatements() {
